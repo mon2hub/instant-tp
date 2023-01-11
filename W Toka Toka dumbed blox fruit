@@ -5,17 +5,13 @@ local Tab1 = Win1:Server("Toka v2", "")
 --Main
 local main = Tab1:Channel("main")
 
-
---chest farm
-local chest = Tab1:Channel("auto farm chest")
-
 main:Label("script made by:Toka")
 main:Label("Discord:Toka5121")
 
 
 ----------------------------------------------
 
-main:Toggle("auto chest", function()
+main:Button("auto chest", function()
     DiscordLib:Notification("auto chest", "On", "Okay!")
     getgenv().Server_Hop = true
     getgenv().Chest_Farm = true
